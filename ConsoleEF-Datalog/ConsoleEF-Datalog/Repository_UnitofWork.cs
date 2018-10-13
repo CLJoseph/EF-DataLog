@@ -6,11 +6,6 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace EFCoreRepositoryDatalog
 {
-
-
-
-
-
     public interface IRepositoryUnitofWork : IDisposable
     {
         bool Complete();
@@ -31,9 +26,6 @@ namespace EFCoreRepositoryDatalog
         public IRepositoryPerson  People    { get; private set; }
         public IRepositoryAddress Addresses { get; private set; }
         public IRepositoryTDBLog  DBLog     { get; private set; }
-
-
-
 
         public bool Complete()
         {

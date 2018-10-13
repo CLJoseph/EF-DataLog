@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 namespace EFCoreRepositoryDatalog
 {
+    //  Information sources 
+    //  Mosh Hamedani      https://www.youtube.com/watch?v=rtXpYpZdOzM
+    //  Meziantou's BLOG   https://www.meziantou.net/2017/08/14/entity-framework-core-history-audit-table  
+
+
+
 
     class Program
     {
@@ -29,8 +35,6 @@ namespace EFCoreRepositoryDatalog
             {
                 Console.WriteLine(" At :" + I.LogDateTime.ToString("HH:mm  dd/MM/yyyy")+  "Table :" + I.TableName + " key :" + I.TablePKName + " " + I.TablePKValue + " Event :" + I.Event + " Detail :" + I.Detail);
             }
-
-           
 
             Console.WriteLine("Press return to close App. ");
             Console.WriteLine("=================================================================================");
